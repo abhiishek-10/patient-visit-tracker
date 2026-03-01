@@ -155,7 +155,7 @@ export default function CliniciansTab() {
           {filtered.map((c) => (
             <div key={c.id} className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                   <span className="text-blue-700 font-semibold text-sm">{c.name.split(' ').filter(w => w.startsWith('Dr.') ? false : true).map(w => w[0]).slice(0, 2).join('')}</span>
                 </div>
                 <div className="min-w-0 flex-1">
