@@ -59,6 +59,23 @@ The API will be available at `http://localhost:3001`.
 ```bash
 cd frontend
 npm install
+```
+
+1. Copy the example env file and set the API base URL:
+
+```bash
+cp .env.example .env
+# Edit .env if your backend runs on a different host or port
+```
+
+`.env` default:
+```
+VITE_API_URL=http://localhost:3001/api
+```
+
+2. Start the development server:
+
+```bash
 npm run dev
 ```
 
